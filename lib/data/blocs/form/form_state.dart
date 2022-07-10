@@ -48,7 +48,4 @@ class FormCubitStateModel {
           index: updateIndex ?? index,
           value: updateValue ?? value,
           allVerified: updateVerified ?? allVerified);
-  //
-  // @override
-  // List<Object> get props => [allVerified, formName, flowState, value,  formElements, errors, dynamicMaxValue, dynamicMaxError];
 }

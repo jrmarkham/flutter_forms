@@ -144,8 +144,6 @@ class FormCubit extends Cubit<FormCubitStateModel> with FormValidationMixin {
     // finally check is valid //
     if (updateFieldState == FieldState.invalid && await isFieldValid(element)) updateFieldState = FieldState.valid;
 
-
-
     //POST UPDATE STATE if field is set to constant refresh should be off most of the time //
     if (updateFieldState == FieldState.valid && element.isConstantRefresh) {
       emit(state.copyWith(updateFlowState: FormFlowState.formBlocStateValueUpdate, updateIndex: element.index, updateValue: element.dataElement.text));
