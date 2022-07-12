@@ -49,35 +49,6 @@ List<FormElement> defaultForm({String? firstName, String? lastName, FieldState? 
     return elements;
   }
 
-  // static List<FormFieldElement> defaultBankForm(BankAccountType type, {String? firstName, String? lastName, FieldState? cbGroupStartingFieldState, bool addDefault = false}) {
-  //   List<FormFieldElement> _elements = [];
-  //   _elements.add(FormFieldElement.firstName(index: _elements.length, isRequiredField: true, startVal: firstName));
-  //   _elements.add(FormFieldElement.lastName(index: _elements.length, isRequiredField: true, startVal: lastName));
-  //   _elements.add(FormFieldElement.bankAccount(index: _elements.length, isRequiredField: true));
-  //   _elements.add(FormFieldElement.bankRouting(index: _elements.length, isRequiredField: true));
-  //   _elements.add(FormFieldElement.zipCode(index: _elements.length, isRequiredField: true));
-  //   _elements.add(FormFieldElement.textLabel(index: _elements.length, startVal: BillingConstants.easyPayLabelBankAccount));
-  //   _elements.add(FormFieldElement.textLabel(index: _elements.length, startVal: BillingConstants.authorizationLabel));
-  //   _elements.add(FormFieldElement.spacer(index: _elements.length));
-  //   _elements.add(FormFieldElement.widget(index: _elements.length, widget: const AutomaticPaymentDescription(isCard: false)));
-  //   _elements.add(FormFieldElement.checkboxGroup(
-  //       index: _elements.length,
-  //       startingFieldState: cbGroupStartingFieldState,
-  //       checkboxes: [
-  //         CheckboxItemElement(
-  //             index: 0,
-  //             name: CBNameConst.authPay,
-  //             isRequired: true,
-  //             isSelected: false,
-  //             label: type == BankAccountType.savings ? BillingConstants.authorizeSavingAccountPaymentMethod : BillingConstants.authorizeCheckingAccountPaymentMethod),
-  //         if (addDefault) CheckboxItemElement(index: 0, name: CBNameConst.defaultPay, isRequired: false, isSelected: false, label: BillingConstants.setAsDefault)
-  //       ],
-  //       maxRequiredCheckbox: 0,
-  //       minRequiredCheckbox: 0));
-  //
-  //   return _elements;
-  // }
-
   FormElement? getFormElementFromListByIndex({required List<FormElement> elements, required int idx}) => elements[idx];
 
   FormElement? getFormElementFromListByName({required List<FormElement> elements, required String findName}) =>
