@@ -1,9 +1,5 @@
-
-
 import '../utils/reg_ex_util.dart' as reg_ex_util;
-
 import '../data/models/form_field/form_field_element.dart';
-
 
 mixin FormValidationMixin {
   bool isFieldEmpty(FormElement element) => element.dataElement.text == null || element.dataElement.text.isEmpty;
