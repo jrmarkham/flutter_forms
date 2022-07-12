@@ -1,6 +1,4 @@
-
-
-  import '../data/models/form_field/form_field_element.dart';
+import '../data/models/form_field/form_field_element.dart';
 import '../data/models/form_field/form_name_key_constants.dart';
 
 List<FormElement> defaultForm({String? firstName, String? lastName, FieldState? cbGroupStartingFieldState, bool addDefault = false}) {
